@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins','sans-serif';
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url("/pst.png");
+    background-repeat: no-repeat;
+}
+.flightForm 
+{
+    width: 80% ;
+    height: 1000px ;
+    margin: 205px auto ;
+    margin-top: 20px ;
+    position: relative ;
+    overflow-y: auto ;
+    border: solid 1px lightseagreen ;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 0 20px 30px lightseagreen ;
+}
+
+#btn1{
+    color: rgb(32, 178, 170);
+    background-color: white;
+	width: 25%;
+}
+#btn2{
+    background-color: rgb(32, 178, 170);
+	color: white;
+	width: 75%;
+	padding-right: 600px;
+}
+.btn-box{
+	display: flex;
+	border-bottom: 1px solid #ccc;
+}
+.btn-box button{
+	background: transparent; 
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 20%;
+	padding: 14px 16px;
+	font-size: 20px;
+	font-weight: bold;    
+}
+.btn-submit button{
+    background-color: lightseagreen;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    width: 15%;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: bold;
+	float: right;
+	margin: 50px 5% 50px 2%;
+}
+i:hover{
+    color: rgb(0, 0, 0);
+  }
+
+
+#cont1{
+    visibility: visible;
+}
+#btn1{
+    color: lightseagreen;
+    background-color: white;
+}
+
+#btn2{
+    color: white;
+    background-color: lightseagreen;
+    
+}
+
+label{
+    font-size: 18px;
+    margin: 10%;
+    margin-top: 20px;
+    
+}
+
+/*
+<input placeholder=Children type="hidden" id="childInp" >
+
+Seat Select Css*/
+
+
+
+.seatdiv{
+    width: 100%;
+    height: 200px;
+    color: black;
+    height: 50%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+}
+
+.upper{
+    max-width: 210px;
+    margin: auto;
+    margin-top: 5px;
+    height: 400px;
+    text-align: center;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 60% 60% 0px 0px;
+    background-color: rgb(220, 250, 255);
+}
+
+.leftwing{
+    position: absolute;
+    left: 0px;
+    top: 550px;
+    z-index: -1;
+    border: 5px solid black;
+    background-color: rgb(220, 250, 255);
+    height: 180px;
+    width: 580px;
+    transform: skewY(-20deg);
+}
+
+@media only screen and (max-width: 1000px) {
+    .leftwing {
+        top: 500px;
+        width: 200px;
+    }
+}
+
+.rightwing{
+    position: absolute;
+    right: 0px;
+    top: 550px;
+    z-index: -1;
+    border: 5px solid black;
+    background-color: rgb(220, 250, 255);
+    height: 180px;
+    width: 580px;
+    transform: skewY(20deg);
+}
+
+@media only screen and (max-width: 1000px) {
+
+.form{
+    margin: 20px auto;
+    height: 500px;
+}
+
+    .rightwing{
+        top: 500px;
+        width: 200px;
+    }
+  }
+
+.middle{
+    max-width: 210px;
+    margin: auto;
+    height: 700px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    background-color: rgb(220, 250, 255);
+    margin-bottom: 10px;
+}
+
+.business{
+    height: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.economy{
+    height: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.right > label, .left > label{
+    cursor: pointer;
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2px;
+    width: 25%; 
+    font-size: 12px;
+    padding: 4px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 0px 1px rgb(90, 230, 255);
+    background-color: rgb(200, 245, 253);
+    user-select: none;
+}
+
+.right{
+    float:right;
+    width: 48%;
+}
+
+.left{
+    float:left;
+    width: 48%;
+}
+
+input{
+    cursor: pointer;
+    display: none;
+}
+
+input:checked + label{
+    color:rgb(255, 255, 255);
+    background-color: rgb(85, 210, 60);
+    box-shadow: 0 0 0px 1px rgb(4, 87, 1);
+}
+
+input:disabled + label{
+    color:rgb(70, 0, 0);
+    background-color: rgb(255, 215, 215);
+    box-shadow: 0 0 0px 1px red;
+    cursor: not-allowed;
+}
+.seat-info{
+    height: 50px;
+}
+.seat-img{
+    width:150px;
+    height:80px; 
+    float: right; 
+    margin-right: 20px; 
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .flightForm
+    {
+        width: 95%;
+        margin: 50px auto 135px auto;
+    }     
+    #btn1{
+		font-size: 14px;
+        width: 55%;
+        height: 95%;
+	}
+	#btn2{
+		font-size: 14px;
+        width: 45%;
+        padding: 0%;
+	}
+    .seat-img {
+        margin: 20px 0 0 30%;
+        float: none;
+    }
+	.btn-submit button{
+		margin: 40px 10px 50px 10px;
+		width: 94%;
+		font-size: 16px;
+	}
+    h1{
+        font-size: 18px;
+    }
+    .upper
+    {
+        margin-top: 80px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input  {
+        font-size: 14px;
+    }
+    .form{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    td{
+        display: block;
+    }
+    .box
+    {
+        margin-top: 8% !important;
+    }
+}
