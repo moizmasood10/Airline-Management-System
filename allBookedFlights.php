@@ -86,7 +86,7 @@
         $sql1  = "select * from flightdate where detailsId = $detailsId ";
         $res1 = mysqli_query($conn,$sql1);
         $row1 = mysqli_fetch_assoc($res1);
-        $sql2  = "SELECT * FROM `flightdetails` where flightsDetailsId = (select flightsDetailsId from flightdate where detailsId = $detailsId)";
+        $sql2  = "SELECT * FROM `flightsdetails` where flightsDetailsId = (select flightsDetailsId from flightdate where detailsId = $detailsId)";
         $res2 = mysqli_query($conn,$sql2);
         $row2 = mysqli_fetch_assoc($res2); 
     ?>  

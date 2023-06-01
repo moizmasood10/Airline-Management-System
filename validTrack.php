@@ -2,7 +2,7 @@
 require('db_connection.php');
 
     $trackingID = $_POST['track'];    
-    $sql1  = "select * from flightdetails where flightsDetailsId = (select flightsDetailsId from flightdate where detailsId = (select detailsId from bookedflights where trackingId =  '$trackingID')) ";
+    $sql1  = "select * from flightsdetails where flightsDetailsId = (select flightsDetailsId from flightdate where detailsId = (select detailsId from bookedflights where trackingId =  '$trackingID')) ";
     $res1 = mysqli_query($conn,$sql1);
     $row1 = mysqli_fetch_assoc($res1);
 

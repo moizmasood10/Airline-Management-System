@@ -1,0 +1,10 @@
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F01','Karachi','Lahore','8:00 am','MTA 30');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F02','Lahore','Karachi','12:00 am','MTA 30');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F03','Karachi','Islamabad','9:00 am','MTA 32');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F04','Islamabad','Karachi','1:00 pm','MTA 32');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F05','Karachi','Quetta','10:00 am','MTA 34');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F06','Quetta','Karachi','2:00 pm','MTA 34');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F07','Karachi','Multan','11:00 am','MTA 36');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F08','Multan','Karachi','3:00 pm','MTA 36');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F09','Karachi','Skardu','7:00 am','MTA 38');
+INSERT INTO `flightsdetails`(`flightsDetailsId`, `departure`, `destination`, `departureTime`, `flightName`) VALUES ('F10','Skardu','Karachi,'11:00 am','MTA 38');

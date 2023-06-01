@@ -15,7 +15,7 @@ $noOfPassengers = $_SESSION['passengerCount'];
 $insquery2 = "insert into bookedflights(trackingId,detailsId, class, noOfPassengers) VALUES ('$trackId','$setDetailsId','$sclass','$noOfPassengers')";
 mysqli_query($conn, $insquery2);
 
-$wq = "select * from flightdetails WHERE flightsDetailsId = '$ID'";
+$wq = "select * from flightsdetails WHERE flightsDetailsId = '$ID'";
 $rest = mysqli_query($conn, $wq);
 $row1 = mysqli_fetch_assoc($rest);
 

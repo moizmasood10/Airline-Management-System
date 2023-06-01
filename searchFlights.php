@@ -25,7 +25,7 @@ require('db_connection.php');
         $price = $e_price;
     }
     $_SESSION['ticketPrice'] = $price;
-    $query1 = "SELECT * from flightdetails where departure = '$from' and destination='$to'";
+    $query1 = "SELECT * from flightsdetails where departure = '$from' and destination='$to'";
     $res = mysqli_query($conn, $query1);
     $num1 = mysqli_num_rows($res);
     $query2 = "select * from flightdate where departureDate = '$date'";
