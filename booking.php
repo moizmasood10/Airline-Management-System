@@ -91,7 +91,7 @@ if ((time() - $_SESSION['start_time']) > 60) {
                                         <?php
                                     }
                                     ?>
-                                </datalist>x
+                                </datalist>
                             </div>
                             <div class="six" onclick="openDivTo()">
                                 <label id="lblTo"> To </label> <br>
