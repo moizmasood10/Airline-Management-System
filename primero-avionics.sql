@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2023 at 09:46 PM
+-- Generation Time: Jun 20, 2023 at 07:02 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -476,12 +476,12 @@ CREATE TABLE `signup` (
   `pUsername` varchar(255) DEFAULT NULL,
   `pPassword` varchar(255) DEFAULT NULL,
   `pEmail` varchar(255) DEFAULT NULL,
-  `pNum` int(11) DEFAULT NULL,
+  `pNum` varchar(255) DEFAULT NULL,
   `pCity` varchar(255) DEFAULT NULL,
   `pGender` varchar(255) DEFAULT NULL,
   `pDob` date DEFAULT NULL,
   `pAge` int(2) DEFAULT NULL,
-  `cardNumber` int(23) DEFAULT NULL,
+  `cardNumber` varchar(23) DEFAULT NULL,
   `cvvNum` int(3) DEFAULT NULL,
   `expiryDate` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
