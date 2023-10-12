@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Poppins','sans-serif';
+	text-transform: uppercase;
+}
+a
+{
+	color: inherit;
+}
+body
+{
+	background-color: black;
+}
+.main
+{
+	overflow-wrap: scroll;
+	flex-wrap: wrap;
+}
+.container {
+	flex-direction: row;
+	border-radius: 5px;
+	width: 85%;
+	margin-left: 7%;
+	background-color: black;
+}
+.one
+{
+	border-left: solid 1px lightseagreen;
+	border-right: solid 1px lightseagreen;
+	background-color: white
+}
+.one,.last,.first
+{
+	width:100%;
+	height: 100%;
+}
+.last
+{
+	background-color: lightseagreen;
+	border-radius: 0 0 20px 20px;
+	border-top: none;
+	border-right: solid 1px lightseagreen;
+	border-bottom: solid 1px lightseagreen;
+	border-left: solid 1px lightseagreen;
+}
+.first
+{
+	border-radius: 20px 20px 0 0;
+    background-color: aliceblue;
+	border-top: solid 1px lightseagreen;
+	border-right: solid 1px lightseagreen;
+	border-bottom: none;
+	border-left: solid 1px lightseagreen;
+
+}
+.two
+{
+	width:100%;
+	display: flex;
+}
+label {
+	font-weight: bold;
+	margin: 0 50px;
+	font-size: 25px;
+}
+h2 {
+	display: inline-block;
+    margin: 50px;
+	font-size: 30px;
+}
+.five
+{
+	margin: 0;
+	width: 33%;
+	position: relative;
+	height: 80px;
+	align-items: center;
+	display: flex;
+	border-bottom: solid 1px #ccc;
+}
+.five:hover,.six:hover
+{
+	border: 1px solid lightseagreen;
+}
+span
+{
+	font-size: 20px;
+	display: block;
+	font-weight:normal;
+	font-family: 'Courier New', Courier, monospace;
+}
+img
+{
+	margin-left: 15%;
+    padding: 2px;
+    background-color: white;
+    width: 100px;
+    border-radius: 6px;
+}
+.five:last-child
+{
+	border-left: solid 1px #ccc;
+}
+.last .five
+{
+	border-bottom: none;
+}
+@media only screen and (max-width: 800px) {
+	.main
+	{
+		transform: rotate(270deg);
+		width: 640px;
+		margin: -231% 0px 0px 216%;
+	}
+	.container {
+		margin: 0px 0px 0px 0px;
+		width: 600px;
+	}
+		label,span
+	{
+		font-size: 15px;
+	}
+	.five
+	{
+		height: 60px;
+		position: relative;
+		width: 147px;
+		margin-bottom: 0px;
+	}
+	.last
+	{
+		height: 60px;
+		width: 100%;
+	}
+	label {
+		font-weight: bold;
+		margin: 0 20px;
+	}
+	img {
+		width: 68px;
+		margin-top: 1.5px;
+	}
+	
+}
