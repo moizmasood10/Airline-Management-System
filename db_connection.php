@@ -1,11 +1,16 @@
 <?php
-session_start();
+// Database connection details
+$servername = "localhost";
+$username = "moiz";
+$password = "moizairline69";
+$database = "airline_db";
 
-$servername = "ls-ce1eb672c2222fb22bf65c82d0b2d086c7de3f40.cdb7mxbdnxoe.ap-southeast-1.rds.amazonaws.com";
-$username = "dbmasteruser";
-$password = "ecom$1234";
-$database = "dbmaster";
-
-// Create a connection
+// Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
 ?>
